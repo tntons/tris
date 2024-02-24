@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'search-bar': '#DFE0E3',
+        'primary-gray': '#DFE0E3',
         'nav-bar': '#1743D8',
         'primary-blue': "#142864",
+        'warm-yellow': '#FEFDF7',
+        'primary-light-green': '#55DF63',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

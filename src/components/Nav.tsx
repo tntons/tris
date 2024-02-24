@@ -18,7 +18,7 @@ export default function NavBar(){
 
     return(
         <>
-            <div className="bg-nav-bar h-[56px] w-full absolute top-0 flex items-center pl-[10px] justify-between">
+            <div className="bg-nav-bar h-[56px] w-full absolute top-0 flex items-center pl-[10px] justify-between mb-[56px]">
                 <div className="flex items-center ml-[20px]">
                     <Image src="/logo.svg" alt="logo" width={13} height={28}></Image>
                     <div className="flex flex-row ml-[10px] text-white text-[13px] font-semibold">
