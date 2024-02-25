@@ -14,7 +14,7 @@ export default function TextBox({
     className?: string;
 }){
     return(
-        <div className={`flex flex-col gap-3 w-[90%]`}>
+        <div className={`flex flex-col gap-3`}>
             <label htmlFor={label} className="font-bold text-xs self-start">{label}</label>
             <input type={type} placeholder={placeholder} value={value} onChange={onChange} className={`${className} text-opacity-60 text-xs h-[50px] rounded-md px-2 py-1`}/>
         </div>

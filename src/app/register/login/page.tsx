@@ -19,8 +19,10 @@ export default function Login(){
                 <p className="text-center text-gray-600 px-[10px] text-xs">
                 Please login and find the company lists hat suite you and location your desired location!
                 </p>
-                <TextBox label="Email" placeholder="Somjaijaidee@gmail.com" type="text"></TextBox>
-                <TextBox label="Password" placeholder="" type="password"></TextBox>
+                <div className='w-[85%] flex flex-col gap-3'>
+                    <TextBox label="Email" placeholder="Somjaijaidee@gmail.com" type="text"></TextBox>
+                    <TextBox label="Password" placeholder="" type="password"></TextBox>
+                </div>
                 <div className="flex flex-row justify-between w-[90%]">
                     <div className="flex items-center gap-2">
                         <label htmlFor="remember" className="inline-flex relative items-center cursor-pointer">

@@ -28,7 +28,7 @@ export default function RootLayout({
     <CheckedItemsContext.Provider value={{ checkedItems, setCheckedItems }}>
     <html lang="en">
       {!pathname.includes("/register") && <NavBar />}
-      <body className={`${inter.className} pt-[56px] bg-warm-yellow`}>{children}</body>
+      <body className={`${inter.className} ${pathname.includes("/register") ? '' : 'pt-[56px]'} bg-warm-yellow`}>{children}</body>
     </html>
     </CheckedItemsContext.Provider>
   );
