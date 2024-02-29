@@ -6,19 +6,41 @@ import { useRouter } from "@/navigation";
 import { useContext } from "react";
 import { SelectedJobContext } from "@/contexts/SelectedJobContext";
 import { useEffect } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
+import mockDataEn from '../../mockJobs.json';
+import mockDataJp from '../../mockJobsJp.json';
+import { locales } from '../../../../../navigation';
+
+type Job = {
+    logo: string;
+    companyName: string;
+    location: string;
+    jobName: string;
+    details?: string;
+    requirements: string[];
+    facilities: { topic: string; detail: string }[];
+    description?: string;
+  };
 
 export default function JobDetail(){
     const params = useParams<{ companyName: string; jobName: string }>()
     const { selectedJob, setSelectedJob } = useContext(SelectedJobContext);
+    const t = useTranslations('Jobs');
+    const [job, setJob] = useState<Job | null>(null);
+
+    const locale = useLocale();
 
     const formattedJobName = params.jobName.replace(/%20/g, " ");
     const formattedCompanyName = params.companyName.replace(/%20/g, " ");
     const router = useRouter();
-    const job = selectedJob;
+    // const job = selectedJob;
 
-    if (!job) {
-        return <div>No job selected</div>;
-    }
+    useEffect(() => {
+        const mockData = locale === 'en' ? mockDataJp : mockDataJp;
+        const job = mockData.find(job => job.companyName === formattedCompanyName) || null;
+        setJob(job);
+    }, [formattedCompanyName, formattedJobName, locale]);
 
     useEffect(() => {
         const job = localStorage.getItem('selectedJob');
@@ -33,27 +55,9 @@ export default function JobDetail(){
         }
     }, [selectedJob]);
 
-    const requirements = [
-        "Experience: [X years] of proven experience in project management, preferably in [related industry/niche].",
-        "Skills: Strong organizational, communication, and leadership skills. Proficient in project management tools and methodologies.",
-        "Innovation: A track record of driving innovation and efficiency in project workflows.",
-        "Adaptability: Ability to thrive in a dynamic startup environment, adapting quickly to changing priorities and challenges."
-    ];
-
-    const facilities = [
-        {
-            topic: "Career Growth",
-            detail: "Joining [Startup Company Name] means being part of a team invested in your professional development. We believe in promoting from within and providing opportunities for career advancement."
-        },
-        {
-            topic: "Innovation Culture",
-            detail: "Be at the forefront of innovation in [industry/niche]. Contribute your ideas and expertise to projects that make a real impact."
-        },
-        {
-            topic: "Collaborative Environment",
-            detail: "Work with a diverse and passionate team that values collaboration, creativity, and a shared commitment to excellence."
-        }
-    ];
+    if (!job) {
+        return <div>No job selected</div>;
+    }
 
     return(
         <div className="p-[23px] overflow-y-aut">
@@ -76,7 +80,7 @@ export default function JobDetail(){
                 <div className="bg-neutral-100 p-[13px] rounded-[14px] flex flex-col gap-3">
                     <h1 className="text-[14px] font-semibold text-indigo-950">Requirements</h1>
                     <ul className="list-disc pl-5 text-[#514A6B] text-[12px]">
-                        {requirements.map((requirement, index) => (
+                        {job.requirements.map((requirement, index) => (
                             <li key={index} className="text-[14px]">{requirement}</li>
                         ))}
                     </ul>
@@ -84,15 +88,13 @@ export default function JobDetail(){
                 <div className="flex flex-col gap-3">
                     <h1 className="text-indigo-950 text-[18px] font-bold">Job Description</h1>
                     <p className="text-[#514A6B] text-sm">
-                    Welcome to [Startup Company Name], a dynamic and innovative startup poised to 
-                    revolutionize the [industry/niche] landscape. Our passionate team is dedicated 
-                    to creating a work environment that fosters creativity, collaboration, and excellence.
+                        {job.description}
                     </p>
                 </div>
                 <div className="flex flex-col gap-3">
                     <h1 className="text-indigo-950 text-[18px] font-bold">Facilities and Others</h1>
                     <ul className="list-disc pl-5">
-                        {facilities.map((facility, index) => (
+                        {job.facilities.map((facility, index) => (
                             <li key={index}>
                                 <h2 className="text-indigo-950 text-[16px] font-bold">{facility.topic}</h2>
                                 <p className="text-[#514A6B] text-sm">{facility.detail}</p>

@@ -1,0 +1,125 @@
+[
+    {
+        "logo": "/sample-company-logo.png",
+        "companyName": "SAVASDEE COMPANY",
+        "location": "BKK",
+        "jobName": "Art Director",
+        "details": "Looking to hire an experienced illustrator to create some character and environment illustrations/designs for a short 2D explainer, of the quality akin to the samples below",
+        "requirements": [
+            "Experience: [X years] of proven experience in project management, preferably in [related industry/niche].",
+            "Skills: Strong organizational, communication, and leadership skills. Proficient in project management tools and methodologies.",
+            "Innovation: A track record of driving innovation and efficiency in project workflows.",
+            "Adaptability: Ability to thrive in a dynamic startup environment, adapting quickly to changing priorities and challenges."
+        ],
+        "facilities": [
+            {
+                "topic": "Career Growth",
+                "detail": "Joining [Startup Company Name] means being part of a team invested in your professional development. We believe in promoting from within and providing opportunities for career advancement."
+            },
+            {
+                "topic": "Innovation Culture",
+                "detail": "Be at the forefront of innovation in [industry/niche]. Contribute your ideas and expertise to projects that make a real impact."
+            },
+            {
+                "topic": "Collaborative Environment",
+                "detail": "Work with a diverse and passionate team that values collaboration, creativity, and a shared commitment to excellence."
+            }
+        ],
+        "description": "Welcome to [Startup Company Name], a dynamic and innovative startup poised to revolutionize the [industry/niche] landscape. Our passionate team is dedicated to creating a work environment that fosters creativity, collaboration, and excellence. "
+    },
+    {
+        "logo": "/sample-company-logo.png",
+        "companyName": "GOData COMPANY",
+        "location": "BKK",
+        "jobName": "Data Engineer",
+        "details": "We're seeking a talented Data Engineer to join our growing team in Bangkok. In this role, you'll be responsible for designing, implementing, and maintaining data pipelines and systems to support our data-driven initiatives.",
+        "requirements": [
+            "Bachelor's degree in Computer Science, Engineering, or related field.",
+            "Strong programming skills in languages such as Python, SQL, or Scala.",
+            "Experience with big data technologies (e.g., Hadoop, Spark, Kafka).",
+            "Knowledge of data modeling, ETL processes, and data warehousing concepts.",
+            "Excellent problem-solving and analytical abilities."
+        ],
+        "facilities": [
+            {
+                "topic": "",
+                "detail": "Access to cutting-edge data technologies and tools."
+            },
+            {
+                "topic": "",
+                "detail": "Opportunities to work on challenging and impactful projects."
+            },
+            {
+                "topic": "",
+                "detail": "Collaboration with a diverse team of data professionals."
+            }
+        ],
+        "description": "As a Data Engineer, you will be responsible for designing, building, and maintaining data pipelines and systems to support our data-driven initiatives. You will work closely with data scientists, analysts, and other stakeholders to understand business requirements and design scalable solutions for data ingestion, processing, and storage."
+    },
+    {
+        "logo": "/sample-company-logo.png",
+        "companyName": "SoftEN COMPANY",
+        "location": "FUK",
+        "jobName": "Software Engineer",
+        "details": "Seeking a seasoned Software Engineer to join our innovative team in Bangkok. This role involves developing and maintaining software solutions that meet our clients' needs. The ideal candidate should have a strong background in software development, proficiency in programming languages such as Java or Python, and experience with agile methodologies.",
+        "requirements": [
+            "Bachelor's degree in Computer Science or related field.",
+            "Strong proficiency in programming languages such as Java, Python, or C++.",
+            "Experience with software development methodologies (e.g., Agile, Scrum).",
+            "Familiarity with version control systems.",
+            "Excellent problem-solving and analytical skills."
+        ],
+        "facilities": [
+            {
+                "topic": "",
+                "detail": "Access to cutting-edge development tools and technologies."
+            },
+            {
+                "topic": "",
+                "detail": "Opportunities for professional development and training."
+            },
+            {
+                "topic": "",
+                "detail": "Competitive salary and benefits package."
+            }
+        ],
+        "description": "As a Software Engineer, you will be responsible for designing, developing, and maintaining software solutions to meet our clients' needs. You will work closely with cross-functional teams to gather requirements, design software architecture, write code, and ensure the quality and performance of the software."
+    },
+    {
+        "logo": "/sample-company-logo.png",
+        "companyName": "Deejai COMPANY",
+        "location": "FUK",
+        "jobName": "Ux Ui Designer",
+        "details": "We're on the lookout for a talented UX/UI Designer to join our creative team in Bangkok. In this role, you'll be responsible for crafting intuitive and visually stunning user experiences for our digital products.",
+        "description": "As a UX/UI Designer, you will be responsible for creating intuitive and visually appealing user experiences for our digital products. You will create wireframes, prototypes, and visual designs, and iterate based on feedback to deliver high-quality user experiences.",
+        "requirements": [
+            "Bachelor's degree in UX/UI Design, or related field.",
+            "Strong portfolio showcasing UX/UI design projects.",
+            "Proficiency in design tools such as Sketch, Adobe XD, or Figma.",
+            "Knowledge of user-centered design principles and best practices.",
+            "Excellent visual design skills and attention to detail."
+        ],
+            "facilities": [
+              {
+                "topic": "",
+                "detail": "Inspiring work environment with creative spaces."
+              },
+              {
+                "topic": "",
+                "detail": "Access to design software and tools."
+              },
+              {
+                "topic": "",
+                "detail": "Collaboration with talented designers and developers."
+              },
+              {
+                "topic": "",
+                "detail": "Free flow coffee in working area"
+              },
+              {
+                "topic": "",
+                "detail": "30 days leave per year."
+              }
+            ]
+    }
+]

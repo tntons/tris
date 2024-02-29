@@ -2,10 +2,12 @@
 
 import SearchBar from '@/components/SearchBar';
 import JobCard from './components/JobCard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CheckedItemsContext } from "@/contexts/CheckedItemsContext";
 import { useContext } from "react";
 import { SelectedJobContext } from "@/contexts/SelectedJobContext";
+import { useTranslations } from 'next-intl';
+import mockJobs from './mockJobs.json';
 
 type Job = {
     logo: string;
@@ -15,37 +17,27 @@ type Job = {
     details: string;
 };
 
-const mockJobs = [
-    {
-        logo: '/sample-company-logo.png',
-        companyName: 'SAVASDEE COMPANY',
-        location: 'BKK',
-        jobName: 'Art Director',
-        details: `Looking to hire an experienced illustrator to create 
-        some character and environment illustrations/
-        designs for a short 2D explainer, of the quality akin
-         to the samples below`,
-    },
-    {
-        logo: '/sample-company-logo.png',
-        companyName: 'Company 2',
-        location: 'Location 2',
-        jobName: 'Job Name 2',
-        details: 'Job Details 2',
-    },
-    {
-        logo: '/sample-company-logo.png',
-        companyName: 'Company 3',
-        location: 'Location 3',
-        jobName: 'Job Name 3',
-        details: 'Job Details 3',
-    },
-];
-
 export default function Jobs(){
     const [isStarred, setIsStarred] = useState<Record<number, boolean>>({});
     const { checkedItems, setCheckedItems } = useContext(CheckedItemsContext);
     const { selectedJob, setSelectedJob } = useContext(SelectedJobContext);
+    const t = useTranslations('Jobs');
+
+    let jobIndex;
+    let jobCards = [];
+
+    if (mockJobs) {
+        for (let i = 0; i < mockJobs.length; i++) {
+            jobIndex = i;
+            jobCards.push({
+                logo: t(`${jobIndex}.logo`),
+                companyName: t(`${jobIndex}.companyName`),
+                location: t(`${jobIndex}.location`),
+                jobName: t(`${jobIndex}.jobName`),
+                details: t(`${jobIndex}.details`),
+            });
+        }
+    }
 
     const handleStarClick = (index: number) => {
         setIsStarred(prevState => ({ ...prevState, [index]: !prevState[index] }));
@@ -55,6 +47,10 @@ export default function Jobs(){
     const handleJobClick = (job: Job) => {
         setSelectedJob(job);
     }
+
+    useEffect(() => {
+        console.log(t);
+    }, [])
 
     return(
         <div className='flex flex-col items-center justify-center p-[10px] gap-5'>
@@ -70,7 +66,7 @@ export default function Jobs(){
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center items-center'>
-                {mockJobs.map((job, index) => (
+                {jobCards.map((job, index) => (
                     <JobCard key={index} job={job} onStar={() => handleStarClick(index)} onClick={() => handleJobClick(job)} />
                 ))}
             </div>

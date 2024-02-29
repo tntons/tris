@@ -4,11 +4,13 @@ import Image from "next/image";
 import { DM_Sans } from "next/font/google"
 import SearchBar from "@/components/SearchBar";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl"; // Import useTranslations
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
+  const t = useTranslations('Index'); // Use translations from 'Index'
 
   const handleSearchClick = () => {
     router.push('/jobs');
@@ -22,15 +24,9 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center p-[15px]">
         <SearchBar onClick={handleSearchClick} />
         <div className="mt-[50px] text-left self-start px-[40px]">
-          <h1 className="font-bold">WHO ARE WE?</h1>
+          <h1 className="font-bold">{t('who_are_we')}</h1>
           <p className="text-[13.5px]">
-            In our little country we own plentiful species of wildlife and very strong 
-            biodiversity on hand, especially, we have Tiger! The largest remaining home 
-            for Thailand Tiger is in the western forest complex(WEFCOM) in Thailand. 
-            However, this story almost disappears from people attention but they flew 
-            for miles and miles to study this story in our little country. 
-            A very essential story, that originally researched by Thai team and continuously 
-            studied for over 30 years, up until we have a set of knowledge that is widely accepted.
+            {t('who_are_we_description')}
           </p>
         </div>
       </div>
@@ -39,13 +35,9 @@ export default function Home() {
 
       <div className="flex flex-row p-[40px]">
         <div className="text-left w-[60%] px-[10px]">
-          <h1 className="font-bold">Story from Bangkok</h1>
+          <h1 className="font-bold">{t('story_from_bangkok')}</h1>
           <p className="text-[13.5px]">
-            In our little country we own plentiful species of wildlife and very strong 
-            biodiversity on hand, especially, we have Tiger! The largest remaining home 
-            for Thailand Tiger is in the western forest complex(WEFCOM) in Thailand. However, 
-            this story almost disappears from people attention but they flew for miles and 
-            miles to study this story in our little country.
+            {t('story_from_bangkok_description')}
           </p>
         </div>
         <div className="relative w-[40%]">
@@ -60,12 +52,9 @@ export default function Home() {
           <Image src="/fukuoka_landing.png" alt="fukuoka_landing" layout="fill" objectFit="cover"></Image>
         </div>
         <div className="text-left w-[50%] pl-[20px]">
-          <h1 className="font-bold">Story from Fukuoka</h1>
+          <h1 className="font-bold">{t('story_from_fukuoka')}</h1>
           <p className="text-[13.5px]">
-          In our little country we own plentiful species of wildlife and very strong biodiversity 
-          on hand, especially, we have Tiger! The largest remaining home for Thailand Tiger is in 
-          the western forest complex(WEFCOM) in Thailand. However, this story almost disappears from 
-          people attention but they flew for miles and miles to study this story in our little country.
+            {t('story_from_fukuoka_description')}
           </p>
         </div>
       </div>

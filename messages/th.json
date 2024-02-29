@@ -1,154 +1,140 @@
 {
     "Index": {
-        "signup_button_label": "ลงชื่อ",
-        "canceled_label": "ยกเลิก",
-        "popular_events_label": "กิจกรรมยอดนิยม",
-        "gender_label": "เพศ",
-        "done_button_label": "เสร็จแล้ว",
-        "customs_duty_label": "ศุลกากรและอากร",
-        "local_event_label": "อีเวนต์ใกล้ฉัน",
-        "dont_have_account_label": "อย่ามีบัญชีหรือยัง?",
-        "eula_label": "การเลือกปุ่มนี้แสดงว่าฉันยอมรับ<u>ข้อกำหนดการใช้งาน</u>และ<u>นโยบายความเป็นส่วนตัว</u>ของ [ชื่อโครงการ]",
-        "search_by_event_name_label": "ค้นหาตามชื่อเหตุการณ์",
-        "event_cat_2_label": "ศิลปะ",
-        "search_event_placeholder": "มาสำรวจกิจกรรมกันดีกว่า.",
-        "train_label": "รถไฟ",
-        "dob_label": "วันเกิด",
-        "organizers_subtitle": "ผู้จัดอีเวนต์ในแพลตฟอร์มของเรา",
-        "organizer_profile_label": "โปรไฟล์ผู้จัดงาน",
-        "my_ticket_subtitle": "แสดงข้อมูลนี้กับผู้จัดอีเวนต์เพื่อใช้ในการเข้าร่วมกิจกรรม",
-        "login_button_title": "เข้าสู่ระบบ",
-        "welcome_title": "ยินดีต้อนรับสู่บางคูโอกะ",
-        "dest_country_label": "เมืองปลายทาง",
-        "confirm_password_placeholder": "ยืนยันรหัสผ่าน",
-        "reserved_label": "ที่สงวนไว้",
-        "dob_placeholder": "15 ธันวาคม 2546",
-        "emergency_contact_title": "การติดต่อในกรณีฉุกเฉิน",
-        "saved_events_label": "กิจกรรมที่บันทึกไว้",
-        "mobile_internet_label": "โทรศัพท์มือถือและอินเทอร์เน็ต",
-        "fukuoka_jp_label": "ฟุกุโอกะ ประเทศญี่ปุ่น",
-        "event_organizers_subtitle": "นี่คือผู้จัดงานบนแพลตฟอร์มของเรา.",
-        "reviews_label": "รีวิว",
-        "organizer_name_label": "ชื่อผู้จัดงาน",
-        "forgot_password_label": "ลืมรหัสผ่าน?",
-        "edit_profile_label": "แก้ไขโปรไฟล์",
-        "my_reservation_subtitle": "นี่คือกิจกรรมที่คุณจองไว้แล้ว.",
-        "confirm_password_label": "ยืนยันรหัสผ่าน",
-        "address_label": "ที่อยู่",
-        "logout_label": "ออกจากระบบ",
-        "last_name_label": "นามสกุล",
-        "explore_world_label": "มาสำรวจโลกกันเถอะ.",
-        "passport_visa_label": "หนังสือเดินทางและวีซ่า",
-        "organizer_description_label": "คำอธิบายผู้จัดงาน",
-        "categories_label": "หมวดหมู่",
-        "vat_tax_label": "ภาษีมูลค่าเพิ่มและการขอคืนภาษี",
-        "new_password_label": "รหัสผ่านใหม่",
-        "landing_title_2": "จองกิจกรรมในท้องถิ่นของคุณในวิธีที่ง่ายที่สุด",
-        "confirm_and_make_reservation_label": "ยืนยันและทำการจอง",
-        "participants_label": "ผู้เข้าร่วม",
-        "completed_status_label": "สมบูรณ์",
-        "review_on_label": "ให้คะแนนเมื่อ",
-        "skip_button_label": "ข้ามไปก่อน",
-        "login_to_your_account_label": "เข้าสู่ระบบบัญชีของคุณ.",
-        "popular_events_subtitle": "นี่คือกิจกรรมยอดนิยมในพื้นที่ของคุณ",
-        "review_on": "ให้คะแนนเมื่อ",
-        "cancel_reservation_button_label": "ยกเลิกการจอง",
-        "sex_female_label": "หญิง",
-        "write_a_review_label": "แสดงความคิดเห็น",
-        "location_label": "ที่ตั้ง",
-        "event_organizers_label": "ผู้จัดงาน",
-        "first_name_label": "ชื่อจริง",
-        "people_are_participated_in_this_event_label": "ประชาชนมีส่วนร่วมในกิจกรรมนี้",
-        "password_label": "รหัสผ่าน",
-        "login_suggest_label": "มีบัญชีอยู่แล้ว? ",
-        "continue_with_label": "หรือดำเนินการต่อด้วย",
-        "confirm_new_password_label": "ยืนยันรหัสผ่านใหม่",
-        "my_ticket_label": "จำนวนตั๋วที่จอง",
-        "make_reservation_button_label": "ทำการจอง",
-        "website_label": "เว็บไซต์",
-        "canceled_status_label": "ยกเลิก",
-        "reserved_status_label": "ที่สงวนไว้",
-        "already_have_an_account_label": "มีบัญชีอยู่แล้ว?",
-        "password_holder": "รหัสผ่าน",
-        "saved_events_subtitle": "นี่คือกิจกรรมที่คุณบันทึกไว้ คุณสามารถบันทึกและตรวจสอบกิจกรรมเหล่านี้ในภายหลังได้.",
-        "tourist_info_subtitle": "นี่คือศูนย์ข้อมูลสำหรับนักท่องเที่ยวที่ต้องการเดินทางไปกรุงเทพฯ หรือฟุกุโอกะ.",
-        "email_label": "อีเมล",
-        "continue_with_google_label": "ดำเนินการต่อด้วย Google",
-        "landing_title_3": "มาค้นพบและเพลิดเพลินไปกับโลกกันเถอะ",
-        "my_reservation_info_label": "การจองของฉัน",
-        "local_events_label": "กิจกรรมในท้องถิ่น",
-        "event_select_label": "อีเวนต์ที่กำลังเกิดขึ้น",
-        "continue_button_lable": "ดำเนินการต่อ",
-        "old_password_label": "รหัสผ่านปัจจุบัน",
-        "local_events_subtitle": "นี่คือกิจกรรมในท้องถิ่นในพื้นที่ของคุณ",
-        "name_title_placeholder": "กรุณาเลือกชื่อของคุณ",
-        "my_profile_label": "ประวัติของฉัน",
-        "view_more_label": "ดูเพิ่มเติม",
-        "search_organizer_placeholder": "ค้นหาผู้จัดอีเวนต์",
-        "english_placeholder": "ภาษาอังกฤษ",
-        "my_saved_events_label": "กิจกรรมที่บันทึกไว้ของฉัน",
-        "landing_title_1": "ค้นหากิจกรรมที่คุณสนใจ",
-        "category_select_placeholder": "ทุกหมวดหมู่",
-        "address_placeholder": "อี.ก. ศาลาว่าการกรุงเทพมหานคร (เสาชิงช้า) 73 ถนนดินสอ เขตพระนคร กรุงเทพฯ 10200 ประเทศไทย",
-        "event_date_label": "วันที่จัดงาน",
-        "more_event_label": "กิจกรรมเพิ่มเติม",
-        "organized_by_label": "จัดโดย",
-        "organizer_address_label": "ที่อยู่ของผู้จัดงาน",
-        "view_organizer_profile_label": "ดูโปรไฟล์ผู้จัดงาน",
-        "change_password_label": "เปลี่ยนรหัสผ่าน",
-        "more_event_subtitle": "นี่คือกิจกรรมเพิ่มเติมที่คุณอาจสนใจ.",
-        "your_comment_label": "ความคิดเห็นของคุณ",
-        "organizer_login_subtitle": "กรุณาเข้าสู่ระบบเพื่อสร้างกิจกรรมของคุณ.",
-        "nationality_placeholder": "แบบไทย",
-        "name_label": "ชื่อ",
-        "bangkok_th_label": "กรุงเทพ ประเทศไทย",
-        "event_cat_1_label": "ความบันเทิง",
-        "confirm_password": "ยืนยันรหัสผ่าน",
-        "bus_label": "รสบัส",
-        "my_reservations_label": "การจองของฉัน",
-        "phone_number_label": "หมายเลขโทรศัพท์",
-        "ticket_available_label": "มีตั๋ว",
-        "phone_number_placeholder": "อี.ก. 012-345-6789",
-        "location_place_holder": "กรุงเทพฯ",
-        "landing_subtitle_lorem": "Lorem ipsum dolor นั่ง amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-        "organizer_website_label": "เว็บไซต์ผู้จัดงาน",
-        "open_on_google_maps_label": "เปิดบน Google Maps",
-        "phone_number": "หมายเลขโทรศัพท์",
-        "sex_male_label": "ชาย",
-        "login_subtitle": "มีบัญชีอยู่แล้ว? . เข้าสู่ระบบทันที.",
-        "tourist_info_label": "ข้อมูลการท่องเที่ยว",
-        "events_title": "กิจกรรม",
-        "my_reservation_title": "กิจกรรมการจองของฉัน",
-        "past_event_label": "กิจกรรมที่ผ่านมา",
-        "emergency_contact_subtitle": "ในกรณีฉุกเฉินในกรุงเทพฯ ประเทศไทย คุณสามารถใช้หมายเลขโทรศัพท์นี้เพื่อติดต่อกับบริการในพื้นที่ได้.",
-        "your_location_label": "คุณอยู่ใน",
-        "nationality_label": "สัญชาติ",
-        "get_started_button_label": "เริ่ม",
-        "event_cat_0_label": "เทคโนโลยี",
-        "events_subtitle": "นี่คือกิจกรรมที่จัดและจัดการโดยผู้จัดงานรายนี้.",
-        "email_placeholder": "อี.ก. example@gmail.com",
-        "register_new_account_label": "ลงทะเบียนบัญชีใหม่",
-        "organizers_title": "ผู้จัดอีเวนต์ของเรา",
-        "event_select_placeholder": "กิจกรรมที่ใช้งานอยู่",
-        "contact_info_title": "ข้อมูลติดต่อ",
-        "login_title": "เข้าสู่ระบบ",
-        "public_transportation_label": "คู่มือการขนส่งสาธารณะ",
-        "contact_info_subtitle": "คุณสามารถใช้ข้อมูลที่ผู้จัดงานให้ไว้เพื่อติดต่อกับพวกเขาได้.",
-        "event_time_label": "เวลากิจกรรม",
-        "date_label": "วันที่",
-        "tourist_info_title": "ศูนย์ข้อมูลการท่องเที่ยว",
-        "organizer_address_placeholder": "อี.ก. กรุงเทพมหานคร",
-        "emergency_fk_subtitle": "ในกรณีฉุกเฉินในฟุกุโอกะ ประเทศญี่ปุ่น คุณสามารถใช้หมายเลขโทรศัพท์นี้เพื่อติดต่อกับบริการในท้องถิ่นได้.",
-        "register_new_account": "ลงทะเบียนบัญชีใหม่.",
-        "event_cat_3_label": "ดนตรี",
-        "event_cat_4_label": "ฟิล์ม",
-        "event_cat_5_label": "การบรรยายและหนังสือ",
-        "event_cat_6_label": "แฟชั่น",
-        "event_cat_7_label": "อาหารเครื่องดื่ม",
-        "event_cat_8_label": "องค์กรการกุศล",
-        "event_cat_9_label": "กีฬาและชีวิตที่กระตือรือร้น",
-        "event_cat_10_label": "เด็กและครอบครัว",
-        "event_cat_11_label": "อื่น",
-        "event_cat_12_label": "เทศกาลและงานแสดงสินค้า"
-    }
+        "who_are_we_description": "\"Tris\" เป็นแพลตฟอร์มที่ออกแบบมาเพื่อเชื่อมต่อบริษัทสตาร์ทอัพและ SME ในฟูกูโอกะ, ญี่ปุ่น และกรุงเทพฯ, ประเทศไทย มีจุดมุ่งหมายเพื่อเสนอโอกาสใหม่ๆ สำหรับบัณฑิตที่เพิ่งจบการศึกษาหรือบุคคลที่สนใจเข้าร่วมในอุตสาหกรรมนี้ โดยการนำธุรกิจจากญี่ปุ่นและประเทศไทยมารวมกัน, \"Tris\" มอบการเข้าถึงโอกาสในการทำงานกับสตาร์ทอัพและ SME ที่หลากหลายได้ง่ายขึ้น",
+        "who_are_we": "เราคือใคร?",
+        "story_from_bangkok": "เรื่องราวจากกรุงเทพฯ",
+        "story_from_bangkok_description": "กรุงเทพฯ, เมืองที่มีชีวิตชีวา, ผสมผสานความทันสมัยกับมรดกทางวัฒนธรรม, เสนอโอกาสที่หลากหลายในภาคธุรกิจและการท่องเที่ยว กำลังพัฒนาเศรษฐกิจของตัวเอง, โฟกัสที่สตาร์ทอัพและ SME เพื่อขับเคลื่อนการเติบโตและสร้างงานให้กับบัณฑิต, มุ่งเน้นที่สภาพแวดล้อมที่น่าอยู่และน่าลงทุนมากขึ้นสำหรับนักท่องเที่ยวและนักลงทุน",
+        "story_from_fukuoka": "เรื่องราวจากฟูกูโอกะ",
+        "story_from_fukuoka_description": "ฟูกูโอกะ, ญี่ปุ่น, ต้อนรับผู้เยี่ยมชม 200,000 คนในปี 2022, เสนอการขนส่งที่สะดวกและอาหารที่มีชื่อเสียง กำลังเติบโตอย่างรวดเร็วเป็นศูนย์กลางสตาร์ทอัพ, ได้รับการสนับสนุนจากโครงการอย่าง Startup City Fukuoka Declaration และ Fukuoka Growth Next, ทำให้เป็นตัวเลือกสูงสุดสำหรับธุรกิจใหม่"
+    },
+    "NavBar": {
+        "home": "บ้าน",
+        "jobs": "งาน",
+        "visa": "วีซ่า"
+    },
+    "Jobs": [
+        {
+            "logo": "/sample-company-logo.png",
+            "companyName": "SAVASDEE COMPANY",
+            "location": "BKK",
+            "jobName": "アートディレクター",
+            "details": "短い2Dの説明用に、いくつかのキャラクターと環境のイラスト/デザインを作成する経験豊富なイラストレーターを募集しています。",
+            "requirements": [
+                "経験: [関連業界/ニッチ]でのプロジェクト管理における[X年]の実証された経験。",
+                "スキル: 優れた組織、コミュニケーション、リーダーシップスキル。プロジェクト管理ツールと方法論に精通していること。",
+                "革新: プロジェクトワークフローの革新と効率化を推進する実績。",
+                "適応性: ダイナミックなスタートアップ環境で活躍し、優先事項と課題の変化に迅速に適応する能力。"
+            ],
+            "facilities": [
+                {
+                    "topic": "キャリア成長",
+                    "detail": "[スタートアップ企業名]に参加することは、あなたの専門的な発展に投資するチームの一員であることを意味します。私たちは内部昇進を信じ、キャリアアップの機会を提供します。"
+                },
+                {
+                    "topic": "革新文化",
+                    "detail": "[業界/ニッチ]の最前線に立ち、実際の影響を与えるプロジェクトにあなたのアイデアと専門知識を貢献してください。"
+                },
+                {
+                    "topic": "協力的な環境",
+                    "detail": "協力、創造性、および卓越への共有コミットメントを価値とする多様で情熱的なチームと一緒に仕事をします。"
+                }
+            ],
+            "description": "[業界/ニッチ]の風景を革命することを目指すダイナミックで革新的なスタートアップ、[スタートアップ企業名]へようこそ。私たちの情熱的なチームは、創造性、協力、および卓越を育む職場環境を作り出すことに専念しています。"
+        },
+        {
+            "logo": "/sample-company-logo.png",
+            "companyName": "GOData COMPANY",
+            "location": "BKK",
+            "jobName": "Data Engineer",
+            "details": "We're seeking a talented Data Engineer to join our growing team in Bangkok. In this role, you'll be responsible for designing, implementing, and maintaining data pipelines and systems to support our data-driven initiatives.",
+            "requirements": [
+                "Bachelor's degree in Computer Science, Engineering, or related field.",
+                "Strong programming skills in languages such as Python, SQL, or Scala.",
+                "Experience with big data technologies (e.g., Hadoop, Spark, Kafka).",
+                "Knowledge of data modeling, ETL processes, and data warehousing concepts.",
+                "Excellent problem-solving and analytical abilities."
+            ],
+            "facilities": [
+                {
+                    "topic": "",
+                    "detail": "Access to cutting-edge data technologies and tools."
+                },
+                {
+                    "topic": "",
+                    "detail": "Opportunities to work on challenging and impactful projects."
+                },
+                {
+                    "topic": "",
+                    "detail": "Collaboration with a diverse team of data professionals."
+                }
+            ],
+            "description": "As a Data Engineer, you will be responsible for designing, building, and maintaining data pipelines and systems to support our data-driven initiatives. You will work closely with data scientists, analysts, and other stakeholders to understand business requirements and design scalable solutions for data ingestion, processing, and storage."
+        },
+        {
+            "logo": "/sample-company-logo.png",
+            "companyName": "SoftEN COMPANY",
+            "location": "FUK",
+            "jobName": "Software Engineer",
+            "details": "Seeking a seasoned Software Engineer to join our innovative team in Bangkok. This role involves developing and maintaining software solutions that meet our clients' needs. The ideal candidate should have a strong background in software development, proficiency in programming languages such as Java or Python, and experience with agile methodologies.",
+            "requirements": [
+                "Bachelor's degree in Computer Science or related field.",
+                "Strong proficiency in programming languages such as Java, Python, or C++.",
+                "Experience with software development methodologies (e.g., Agile, Scrum).",
+                "Familiarity with version control systems.",
+                "Excellent problem-solving and analytical skills."
+            ],
+            "facilities": [
+                {
+                    "topic": "",
+                    "detail": "Access to cutting-edge development tools and technologies."
+                },
+                {
+                    "topic": "",
+                    "detail": "Opportunities for professional development and training."
+                },
+                {
+                    "topic": "",
+                    "detail": "Competitive salary and benefits package."
+                }
+            ],
+            "description": "As a Software Engineer, you will be responsible for designing, developing, and maintaining software solutions to meet our clients' needs. You will work closely with cross-functional teams to gather requirements, design software architecture, write code, and ensure the quality and performance of the software."
+        },
+        {
+            "logo": "/sample-company-logo.png",
+            "companyName": "Deejai COMPANY",
+            "location": "FUK",
+            "jobName": "Ux Ui Designer",
+            "details": "We're on the lookout for a talented UX/UI Designer to join our creative team in Bangkok. In this role, you'll be responsible for crafting intuitive and visually stunning user experiences for our digital products.",
+            "description": "As a UX/UI Designer, you will be responsible for creating intuitive and visually appealing user experiences for our digital products. You will create wireframes, prototypes, and visual designs, and iterate based on feedback to deliver high-quality user experiences.",
+            "requirements": [
+                "Bachelor's degree in UX/UI Design, or related field.",
+                "Strong portfolio showcasing UX/UI design projects.",
+                "Proficiency in design tools such as Sketch, Adobe XD, or Figma.",
+                "Knowledge of user-centered design principles and best practices.",
+                "Excellent visual design skills and attention to detail."
+            ],
+                "facilities": [
+                  {
+                    "topic": "",
+                    "detail": "Inspiring work environment with creative spaces."
+                  },
+                  {
+                    "topic": "",
+                    "detail": "Access to design software and tools."
+                  },
+                  {
+                    "topic": "",
+                    "detail": "Collaboration with talented designers and developers."
+                  },
+                  {
+                    "topic": "",
+                    "detail": "Free flow coffee in working area"
+                  },
+                  {
+                    "topic": "",
+                    "detail": "30 days leave per year."
+                  }
+                ]
+        }
+    ]
 }
