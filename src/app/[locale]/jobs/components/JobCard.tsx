@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image';
 import { useRouter } from '@/navigation';
+import { useState } from 'react';
 
 type Job = {
   logo: string;
@@ -13,15 +14,21 @@ type Job = {
 type JobCardProps = {
   job: Job;
   onStar: () => void;
-  isStarred: boolean;
 };
-  
-  export default function JobCard({ job, onStar, isStarred }: JobCardProps){
-    const router = useRouter();
 
-    const navigateToJobDetails = () => {
-        router.push(`/jobs/${job.companyName}/${job.jobName}`);
-    };
+export default function JobCard({ job, onStar }: JobCardProps){
+  const router = useRouter();
+  const [isStarred, setIsStarred] = useState(false);
+
+  const navigateToJobDetails = () => {
+      router.push(`/jobs/${job.companyName}/${job.jobName}`);
+  };
+
+  const handleStarClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsStarred(!isStarred);
+    onStar();
+  };
 
   return(
       <div onClick={navigateToJobDetails} className="p-4 border rounded-md w-[340px] bg-primary-gray relative flex flex-col gap-[3.5px] cursor-pointer">
@@ -39,8 +46,11 @@ type JobCardProps = {
           </div>
           <h3 className="text-[15px] font-semibold">{job.jobName}</h3>
           <p className="text-sm font-light">{job.details}</p>
-          <button onClick={(e) => {e.stopPropagation(); onStar();}} className="mt-2 absolute top-1 right-3">
-              {isStarred ? '★' : '☆'}
+          <button onClick={handleStarClick} className="mt-2 absolute top-1 right-3">
+            {isStarred 
+                ? <Image src="/star-green-icon.svg" alt="starred" width={13} height={13} /> 
+                : '☆'
+            }
           </button>
       </div>
   )

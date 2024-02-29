@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { CheckedItemsContext } from "@/contexts/CheckedItemsContext";
 import { useContext } from "react";
+import Image from "next/image"
 
-export default function FilterDropdown(){
+type FilterDropdownProps = {
+    onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+};
+
+
+export default function FilterDropdown({ onClick }: FilterDropdownProps){
     const expertise = {
         'A': ['Advertising', 'Animation', 'App Design', 'Architecture'],
         'B': ['Branding', 'Broadcasting'],
@@ -12,14 +18,12 @@ export default function FilterDropdown(){
 
     const { checkedItems, setCheckedItems } = useContext(CheckedItemsContext);
 
-    const handleCheckChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        event.stopPropagation();
-        setCheckedItems({...checkedItems, [event.target.name]: event.target.checked});
-        console.log(checkedItems);
+    const handleCheckChange = (item: string) => {
+        setCheckedItems({ ...checkedItems, [item]: !checkedItems[item] });
     };
 
     return(
-        <div className="bg-white py-2 pl-2 rounded-md absolute top-full right-0 mt-5 z-10 w-[15.6rem] shadow" onClick={(e) => e.stopPropagation()}>
+        <div className="bg-white py-2 pl-2 rounded-md absolute top-full right-0 mt-5 z-10 w-[15.6rem] shadow" onClick={onClick}>
             <div className="flex flex-row">
                 <div className="w-[30%]">
                     <div className="flex flex-row">
@@ -40,8 +44,14 @@ export default function FilterDropdown(){
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     {expertiseList.map(expertise => (
-                                        <div key={expertise} className="flex items-center">
-                                            <input type="checkbox" name={expertise} checked={checkedItems[expertise] || false} onChange={handleCheckChange} />
+                                        <div key={expertise} className="flex items-center flex-row gap-1 ml-[0.5rem]">
+                                            <Image 
+                                                src={checkedItems[expertise] ? "/filter-box-check.svg" : "/filter-box-blank.svg"} 
+                                                alt="checkbox" 
+                                                width={10} 
+                                                height={10} 
+                                                onClick={() => handleCheckChange(expertise)}
+                                            />
                                             <p>{expertise}</p>
                                         </div>
                                     ))}

@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 
 export default function VisaDetail() {
-    const { detail } = useParams();
+    const { detail } = useParams<{ detail: string }>();
 
     const data = {
         "Bangkok": [
@@ -21,7 +21,7 @@ export default function VisaDetail() {
         ]
     };
 
-    const details = data[detail] || [];
+    const details = data[detail as keyof typeof data] || [];
 
     return (
         <div>
