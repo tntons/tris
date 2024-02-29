@@ -16,7 +16,7 @@ export default function Page3({
     moreInfo, 
 }: Page3Props) {
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-full">
             <h1 className="self-start text-[15px] font-bold">Application Review</h1>
             <div className="bg-[#A4D6FB] rounded-[10px] p-[20px] flex flex-col gap-5 h-[25rem]">
                 <div>

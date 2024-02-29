@@ -56,7 +56,7 @@ export default function JobDetail(){
     ];
 
     return(
-        <div className="p-[23px]">
+        <div className="p-[23px] overflow-y-aut">
             <div className="flex flex-col bg-primary-gray h-full min-w-screen rounded-[20px] p-[18px] gap-5">
                 <div className="flex flex-row mt-[30px]">
                     <div className="w-[40%]">

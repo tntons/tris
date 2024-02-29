@@ -7,8 +7,8 @@ export default function Page1({ firstName, setFirstName, lastName, setLastName, 
     const job = "Project Manager"
 
     return(
-        <div>
-            <h1 className="self-start text-blue-950 text-sm font-bold">Contact Information</h1>
+        <div className="w-full">
+            <h1 className="self-start text-blue-950 text-sm font-bold text-left my-[10px]">Contact Information</h1>
             <div className="flex flex-col gap-5">
             <TextBox 
                     label="" 

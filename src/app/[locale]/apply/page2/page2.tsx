@@ -29,7 +29,7 @@ export default function Page2({ fileName , setFileName , fileSize, setFileSize, 
     };
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-full">
             <h1 className="self-start text-[15px] font-bold">Profile Upload</h1>
             <div className={`relative mb-6 items-center rounded-lg border-[1px] border-primary-gray p-4 h-[80px] ${fileName ? 'bg-primary-gray' : ''}`}>
                 <input
@@ -79,7 +79,7 @@ export default function Page2({ fileName , setFileName , fileSize, setFileSize, 
             </div>
             <h1 className="self-start text-[15px] font-bold">More Information</h1>
             <textarea 
-                className="h-[274px] shadow rounded-[10px] p-5" 
+                className="h-[250px] shadow rounded-[10px] p-5" 
                 value={moreInfo} 
                 onChange={handleMoreInfoChange} 
             />
