@@ -9,6 +9,7 @@ import CheckedItemsContextProvider from "@/contexts/CheckedItemsContext";
 // import { useState } from "react";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import ClientNavBar from "./ClientNavbar";
+import SelectedJobProvider from "@/contexts/SelectedJobContext";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,8 +33,10 @@ export default function RootLayout({
         <NextIntlClientProvider locale={locale} messages={useMessages()}>
           <NavbarContextProvider>
             <CheckedItemsContextProvider>
-              <NavBar />
-              {children}
+              <SelectedJobProvider>
+                <NavBar />
+                {children}
+              </SelectedJobProvider>
             </CheckedItemsContextProvider>
           </NavbarContextProvider>
         </NextIntlClientProvider>

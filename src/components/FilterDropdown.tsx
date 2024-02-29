@@ -23,7 +23,7 @@ export default function FilterDropdown({ onClick }: FilterDropdownProps){
     };
 
     return(
-        <div className="bg-white py-2 pl-2 rounded-md absolute top-full right-0 mt-5 z-10 w-[15.6rem] shadow" onClick={onClick}>
+        <div className="bg-white py-2 rounded-md absolute top-full right-0 mt-5 z-10 w-[15.6rem] shadow" onClick={onClick}>
             <div className="flex flex-row">
                 <div className="w-[30%]">
                     <div className="flex flex-row">

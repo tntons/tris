@@ -73,7 +73,7 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
                 <Image src="/search_icon.svg" alt="search_icon" width={22} height={19}/>
                 <input ref={inputRef} type="text" onChange={onChange} value={value} className="ml-2 outline-none border-none bg-transparent" />
             </div>
-            <div className='flex flex-row items-center ml-auto'>
+            <div className='flex flex-row items-center ml-auto gap-[3px]'>
                 <div className='gap-[5px] flex flex-row relative' onClick={handleDropdownClick1}>
                     <Image src="/landmark_icon.svg" alt="landmark_icon" width={8} height={14}></Image>
                     <p className='text-[10px] text-primary-blue'>{selectedProvince}</p>
@@ -91,8 +91,8 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
 
                 <div className="w-[1px] bg-black h-full mx-[3px]"></div>
 
-                <div className='gap-[5px] flex flex-row relative' onClick={handleDropdownClick2}>
-                    <p className='text-[10px] text-primary-blue'>All Works Field</p>
+                <div className='flex flex-row relative' onClick={handleDropdownClick2}>
+                    <p className='text-[10px] text-primary-blue mr-[3px]'>Works Field</p>
                     <Image src="/dropdown_icon.svg" alt="dropdown" width={8} height={5}></Image>
 
                     {showDropdown2 && (

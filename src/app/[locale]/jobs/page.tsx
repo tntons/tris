@@ -5,6 +5,15 @@ import JobCard from './components/JobCard';
 import { useState } from 'react';
 import { CheckedItemsContext } from "@/contexts/CheckedItemsContext";
 import { useContext } from "react";
+import { SelectedJobContext } from "@/contexts/SelectedJobContext";
+
+type Job = {
+    logo: string;
+    companyName: string;
+    location: string;
+    jobName: string;
+    details: string;
+};
 
 const mockJobs = [
     {
@@ -36,10 +45,15 @@ const mockJobs = [
 export default function Jobs(){
     const [isStarred, setIsStarred] = useState<Record<number, boolean>>({});
     const { checkedItems, setCheckedItems } = useContext(CheckedItemsContext);
+    const { selectedJob, setSelectedJob } = useContext(SelectedJobContext);
 
     const handleStarClick = (index: number) => {
         setIsStarred(prevState => ({ ...prevState, [index]: !prevState[index] }));
         console.log('Star clicked');
+    }
+
+    const handleJobClick = (job: Job) => {
+        setSelectedJob(job);
     }
 
     return(
@@ -57,7 +71,7 @@ export default function Jobs(){
             </div>
             <div className='flex flex-col gap-5 justify-center items-center'>
                 {mockJobs.map((job, index) => (
-                    <JobCard key={index} job={job} onStar={() => handleStarClick(index)} />
+                    <JobCard key={index} job={job} onStar={() => handleStarClick(index)} onClick={() => handleJobClick(job)} />
                 ))}
             </div>
         </div>

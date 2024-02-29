@@ -3,13 +3,35 @@
 import { useParams } from "next/navigation"
 import Image from 'next/image';
 import { useRouter } from "@/navigation";
+import { useContext } from "react";
+import { SelectedJobContext } from "@/contexts/SelectedJobContext";
+import { useEffect } from "react";
 
 export default function JobDetail(){
     const params = useParams<{ companyName: string; jobName: string }>()
+    const { selectedJob, setSelectedJob } = useContext(SelectedJobContext);
 
     const formattedJobName = params.jobName.replace(/%20/g, " ");
     const formattedCompanyName = params.companyName.replace(/%20/g, " ");
     const router = useRouter();
+    const job = selectedJob;
+
+    if (!job) {
+        return <div>No job selected</div>;
+    }
+
+    useEffect(() => {
+        const job = localStorage.getItem('selectedJob');
+        if (job) {
+            setSelectedJob(JSON.parse(job));
+        }
+    }, []);
+
+    useEffect(() => {
+        if (selectedJob) {
+            localStorage.setItem('selectedJob', JSON.stringify(selectedJob));
+        }
+    }, [selectedJob]);
 
     const requirements = [
         "Experience: [X years] of proven experience in project management, preferably in [related industry/niche].",
@@ -37,10 +59,12 @@ export default function JobDetail(){
         <div className="p-[23px]">
             <div className="flex flex-col bg-primary-gray h-full min-w-screen rounded-[20px] p-[18px] gap-5">
                 <div className="flex flex-row mt-[30px]">
-                    <div className="w-[35%]">
-
+                    <div className="w-[40%]">
+                        <div className="flex justify-center items-center rounded-full bg-white w-[100px] h-[100px]">
+                            <Image src={job.logo} alt="company logo" width={100} height={100}></Image>
+                        </div>
                     </div>
-                    <div className="w-[65%] flex flex-col gap-3">
+                    <div className="w-[60%] flex flex-col gap-3">
                         <h1 className="text-[19px] font-bold">{formattedCompanyName}</h1>
                         <div className="flex flex-row">
                             <div onClick={() => {router.push("/apply")}}>

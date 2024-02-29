@@ -91,13 +91,13 @@ export default function Apply() {
                                 if (currentPage !== 3) {
                                     return (
                                         <div onClick={nextPage}>
-                                            <Image src="next_apply_button.svg" alt="next button" width={44} height={17}></Image>
+                                            <Image src="/next-apply-button.svg" alt="next button" width={44} height={17}></Image>
                                         </div>
                                     );
                                 } else {
                                     return (
                                         <div onClick={nextPage}>
-                                            <Image src="apply-button.svg" alt="next button" width={100} height={35}></Image>
+                                            <Image src="/apply-button.svg" alt="next button" width={100} height={35}></Image>
                                         </div>
                                     );
                                 }

@@ -14,8 +14,9 @@ type Job = {
 interface JobCardProps {
   job: Job;
   onStar: () => void;
+  onClick: () => void;
 }
-export default function JobCard({ job, onStar }: JobCardProps){
+export default function JobCard({ job, onStar , onClick }: JobCardProps){
   const router = useRouter();
   const [isStarred, setIsStarred] = useState(false);
 
@@ -30,7 +31,7 @@ export default function JobCard({ job, onStar }: JobCardProps){
   };
 
   return(
-      <div onClick={navigateToJobDetails} className="p-4 border rounded-md w-[340px] bg-primary-gray relative flex flex-col gap-[3.5px] cursor-pointer">
+      <div onClick={() => { navigateToJobDetails(); onClick(); }} className="p-4 border rounded-md w-[340px] bg-primary-gray relative flex flex-col gap-[3.5px] cursor-pointer">
           <div className="flex flex-row gap-5">
               <div className="flex justify-center items-center rounded-full bg-white w-[40px] h-[40px]">
                   <Image src={job.logo} alt="company logo" width={33} height={33}></Image>
@@ -47,8 +48,8 @@ export default function JobCard({ job, onStar }: JobCardProps){
           <p className="text-sm font-light">{job.details}</p>
           <button onClick={handleStarClick} className="mt-2 absolute top-1 right-3">
             {isStarred 
-                ? <Image src="/star-green-icon.svg" alt="starred" width={13} height={13} /> 
-                : '☆'
+                ? <Image src="/star-green-icon.svg" alt="starred" width={16} height={16} /> 
+                : <Image src="/star-blank-icon.svg" alt="starred" width={16} height={16} /> 
             }
           </button>
       </div>
