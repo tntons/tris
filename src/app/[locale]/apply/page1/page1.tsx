@@ -11,7 +11,7 @@ export default function Page1({ firstName, setFirstName, lastName, setLastName, 
             <h1 className="self-start text-blue-950 text-sm font-bold">Contact Information</h1>
             <div className="flex flex-col gap-5">
             <TextBox 
-                    label="First Name" 
+                    label="" 
                     placeholder="First Name" 
                     type="text" 
                     className="shadow text-opacity-50 text-xs font-bold"
@@ -19,7 +19,7 @@ export default function Page1({ firstName, setFirstName, lastName, setLastName, 
                     onChange={(e) => setFirstName(e.target.value)}
                 />
                 <TextBox 
-                    label="Last Name" 
+                    label="" 
                     placeholder="Last Name" 
                     type="text" 
                     className="shadow text-opacity-50 text-xs font-bold"
@@ -27,7 +27,7 @@ export default function Page1({ firstName, setFirstName, lastName, setLastName, 
                     onChange={(e) => setLastName(e.target.value)}
                 />
                 <TextBox 
-                    label="Email" 
+                    label="" 
                     placeholder="Email" 
                     type="text" 
                     className="shadow text-opacity-50 text-xs font-bold"
@@ -35,7 +35,7 @@ export default function Page1({ firstName, setFirstName, lastName, setLastName, 
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <TextBox 
-                    label="Phone Number" 
+                    label="" 
                     placeholder="Phone Number" 
                     type="text" 
                     className="shadow text-opacity-50 text-xs font-bold"

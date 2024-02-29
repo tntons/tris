@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CheckedItemsContext } from "@/CheckedItemsContext";
+import { CheckedItemsContext } from "@/contexts/CheckedItemsContext";
 import { useContext } from "react";
 
 export default function FilterDropdown(){

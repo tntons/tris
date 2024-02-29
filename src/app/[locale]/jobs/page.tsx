@@ -3,26 +3,29 @@
 import SearchBar from '@/components/SearchBar';
 import JobCard from './components/JobCard';
 import { useState } from 'react';
-import { CheckedItemsContext } from "@/CheckedItemsContext";
+import { CheckedItemsContext } from "@/contexts/CheckedItemsContext";
 import { useContext } from "react";
 
 const mockJobs = [
     {
-        logo: 'https://example.com/logo1.png',
-        companyName: 'Company 1',
-        location: 'Location 1',
-        jobName: 'Job Name 1',
-        details: 'Job Details 1',
+        logo: '/sample-company-logo.png',
+        companyName: 'SAVASDEE COMPANY',
+        location: 'BKK',
+        jobName: 'Art Director',
+        details: `Looking to hire an experienced illustrator to create 
+        some character and environment illustrations/
+        designs for a short 2D explainer, of the quality akin
+         to the samples below`,
     },
     {
-        logo: 'https://example.com/logo2.png',
+        logo: '/sample-company-logo.png',
         companyName: 'Company 2',
         location: 'Location 2',
         jobName: 'Job Name 2',
         details: 'Job Details 2',
     },
     {
-        logo: 'https://example.com/logo3.png',
+        logo: '/sample-company-logo.png',
         companyName: 'Company 3',
         location: 'Location 3',
         jobName: 'Job Name 3',
@@ -52,7 +55,7 @@ export default function Jobs(){
                     )}
                 </div>
             </div>
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col gap-5 justify-center items-center'>
                 {mockJobs.map((job, index) => (
                     <JobCard key={index} job={job} onStar={handleStarClick} isStarred={isStarred} />
                 ))}

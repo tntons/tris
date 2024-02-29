@@ -34,7 +34,7 @@ export default function Page2({ fileName , setFileName , fileSize, setFileSize, 
             <div className={`relative mb-6 items-center rounded-lg border-[1px] border-primary-gray p-4 h-[80px] ${fileName ? 'bg-primary-gray' : ''}`}>
                 <input
                     type='file'
-                    accept='image/*'
+                    accept='pdf/*'
                     id='upload-file'
                     name='upload-file'
                     onChange={handleFileChange}

@@ -1,6 +1,6 @@
 'use client'
 
-import TextBox from "../../components/TextBox"
+import TextBox from "@/components/TextBox"
 import SignUpButton from './components/SignUpButton';
 import { useRouter } from "next/navigation";
 import Image from 'next/image';

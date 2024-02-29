@@ -1,17 +1,26 @@
+'use client'
+
 import Image from "next/image";
 import { DM_Sans } from "next/font/google"
-import SearchBar from "../components/SearchBar";
+import SearchBar from "@/components/SearchBar";
+import { useRouter } from "next/navigation";
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleSearchClick = () => {
+    router.push('/jobs');
+  };
+
   return (
     <div>
       <div className="relative h-[260px]">
         <Image src="/landing_page_bg.png" alt="Landing page background" layout="fill" objectFit="cover" />
       </div>
       <div className="flex flex-col justify-center items-center p-[15px]">
-        <SearchBar />
+        <SearchBar onClick={handleSearchClick} />
         <div className="mt-[50px] text-left self-start px-[40px]">
           <h1 className="font-bold">WHO ARE WE?</h1>
           <p className="text-[13.5px]">

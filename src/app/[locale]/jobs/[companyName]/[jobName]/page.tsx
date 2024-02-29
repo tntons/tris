@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation"
 import Image from 'next/image';
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/navigation";
 
 export default function JobDetail(){
     const params = useParams<{ companyName: string; jobName: string }>()
@@ -41,7 +41,7 @@ export default function JobDetail(){
 
                     </div>
                     <div className="w-[65%] flex flex-col gap-3">
-                        <h1 className="text-[19px] font-bold">{formattedCompanyName} COMPANY</h1>
+                        <h1 className="text-[19px] font-bold">{formattedCompanyName}</h1>
                         <div className="flex flex-row">
                             <div onClick={() => {router.push("/apply")}}>
                                 <Image src="/easy_apply_button.svg" alt="easy_apply" width={120} height={36}></Image>
