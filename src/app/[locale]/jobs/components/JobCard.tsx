@@ -11,11 +11,10 @@ type Job = {
   details: string;
 };
 
-type JobCardProps = {
+interface JobCardProps {
   job: Job;
   onStar: () => void;
-};
-
+}
 export default function JobCard({ job, onStar }: JobCardProps){
   const router = useRouter();
   const [isStarred, setIsStarred] = useState(false);

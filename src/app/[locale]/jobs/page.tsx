@@ -34,11 +34,11 @@ const mockJobs = [
 ];
 
 export default function Jobs(){
-    const [isStarred, setIsStarred] = useState(false);
+    const [isStarred, setIsStarred] = useState<Record<number, boolean>>({});
     const { checkedItems, setCheckedItems } = useContext(CheckedItemsContext);
 
-    const handleStarClick = () => {
-        setIsStarred(!isStarred);
+    const handleStarClick = (index: number) => {
+        setIsStarred(prevState => ({ ...prevState, [index]: !prevState[index] }));
         console.log('Star clicked');
     }
 
@@ -57,7 +57,7 @@ export default function Jobs(){
             </div>
             <div className='flex flex-col gap-5 justify-center items-center'>
                 {mockJobs.map((job, index) => (
-                    <JobCard key={index} job={job} onStar={handleStarClick} isStarred={isStarred} />
+                    <JobCard key={index} job={job} onStar={() => handleStarClick(index)} />
                 ))}
             </div>
         </div>
