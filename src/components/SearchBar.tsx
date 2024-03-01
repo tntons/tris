@@ -45,9 +45,11 @@ export default function SearchBar({ onClick, onChange, value , shouldFocus , set
     };
 
     const handleSearchClick = () => {
-        if (setShouldFocus && pathname !== '/jobs') {
+        if (pathname !== '/jobs') {
             router.push('/jobs?focus=true');
-            setShouldFocus(true);
+            if (setShouldFocus) {
+                setShouldFocus(true);
+            }
         }
     };
 

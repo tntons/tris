@@ -9,6 +9,7 @@ import { SelectedJobContext } from "@/contexts/SelectedJobContext";
 import { useTranslations } from 'next-intl';
 import mockJobs from './mockJobs.json';
 import { InputRefContext } from '@/contexts/InputRefContext';
+import { useRouter } from '@/navigation';
 
 type Job = {
     logo: string;
@@ -25,6 +26,7 @@ export default function Jobs(){
     const t = useTranslations('Jobs');
     const inputRef = useContext(InputRefContext);
     const [shouldFocus, setShouldFocus] = useState(false);
+    const router = useRouter();
 
     let jobIndex;
     let jobCards = [];
