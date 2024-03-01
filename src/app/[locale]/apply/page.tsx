@@ -51,7 +51,7 @@ export default function Apply() {
                     <Image src={selectedJob.logo} alt="company logo" width={100} height={100}></Image>
                 </div>
                 <h1 className="text-blue-950 font-bold text-base mt-[13px]">APPLY TO {selectedJob.companyName}</h1>
-                <p className="text-blue-950 text-sm font-bold">{selectedJob.jobName}</p>
+                <p className="text-blue-950 text-sm font-bold">Project Manager</p>
 
                 <div className="border-t border-black border-dashed w-full mt-[15px]"></div>
 
