@@ -45,6 +45,9 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
         if (pathname !== '/jobs') {
             router.push('/jobs');
         }
+        if (inputRef.current) {
+            inputRef.current.focus();
+        }
     };
 
     useEffect(() => {

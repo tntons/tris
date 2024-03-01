@@ -37,7 +37,7 @@ export default function JobDetail(){
     // const job = selectedJob;
 
     useEffect(() => {
-        const mockData = locale === 'en' ? mockDataJp : mockDataJp;
+        const mockData = locale === 'en' ? mockDataEn : mockDataJp;
         const job = mockData.find(job => job.companyName === formattedCompanyName) || null;
         setJob(job);
     }, [formattedCompanyName, formattedJobName, locale]);
