@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { SelectedJobContext } from "@/contexts/SelectedJobContext";
 import { useTranslations } from 'next-intl';
 import mockJobs from './mockJobs.json';
+import { InputRefContext } from '@/contexts/InputRefContext';
 
 type Job = {
     logo: string;
@@ -22,6 +23,7 @@ export default function Jobs(){
     const { checkedItems, setCheckedItems } = useContext(CheckedItemsContext);
     const { selectedJob, setSelectedJob } = useContext(SelectedJobContext);
     const t = useTranslations('Jobs');
+    const inputRef = useContext(InputRefContext);
 
     let jobIndex;
     let jobCards = [];
@@ -51,6 +53,14 @@ export default function Jobs(){
     useEffect(() => {
         console.log(t);
     }, [])
+
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const shouldFocus = urlParams.get('focus');
+        if (shouldFocus && inputRef && inputRef.current) {
+            inputRef.current.focus();
+        }
+    }, []);
 
     return(
         <div className='flex flex-col items-center justify-center p-[10px] gap-5'>

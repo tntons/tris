@@ -5,6 +5,7 @@ import { useState } from 'react';
 import FilterDropdown from './FilterDropdown';
 import { usePathname , useRouter } from '@/navigation'
 import { useRef , useEffect } from 'react';
+import { InputRefContext } from '@/contexts/InputRefContext';
 
 type SearchBarProps = {
     onClick?: () => void;
@@ -43,10 +44,7 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
 
     const handleSearchClick = () => {
         if (pathname !== '/jobs') {
-            router.push('/jobs');
-        }
-        if (inputRef.current) {
-            inputRef.current.focus();
+            router.push('/jobs?focus=true');
         }
     };
 
@@ -71,6 +69,7 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
     }, []);
 
     return(
+        <InputRefContext.Provider value={inputRef}>
         <div className="w-[90%] h-[37px] bg-primary-gray p-[9px] rounded-[4px] flex flex-row justify-start items-center">
             <div className='flex' onClick={handleSearchClick}>
                 <Image src="/search_icon.svg" alt="search_icon" width={22} height={19}/>
@@ -106,5 +105,6 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
                 </div>
             </div>
         </div>
+        </InputRefContext.Provider>
     )
 }
