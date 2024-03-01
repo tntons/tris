@@ -25,9 +25,9 @@ export default function Visa() {
                     <Image src="/visa-location-logo.svg" alt="location logo" width={26} height={45} ></Image>
                     <h1 className="font-bold text-[40px] text-[#142864]">Fukuoka</h1>
                 </div>
-                <div className="p-[30px] bg-[#F7F6ED] w-[90%]">
+                {/* <div className="p-[30px] bg-[#F7F6ED] w-[90%]">
                     <h1 className="font-bold text-[24px] text-[#142864]">FAQ</h1>
-                </div>
+                </div> */}
             </div>
         </div>
     )

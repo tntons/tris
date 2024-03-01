@@ -17,6 +17,20 @@
         "home": "Home",
         "language": "Language"
     },
+    "Page1": {
+        "contact_information": "Contact Information",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone_number": "Phone Number"
+      },
+      "Page2": {
+        "profile_upload": "Profile Upload",
+        "more_information": "More Information"
+      },
+      "Page3": {
+        "application_review": "Application Review"
+      },
     "Jobs": [
         {
             "logo": "/sample-company-logo.png",

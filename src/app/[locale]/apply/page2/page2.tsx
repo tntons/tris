@@ -4,8 +4,10 @@ import { useState } from 'react';
 import TextBox from "@/components/TextBox";
 import Image from 'next/image';
 import { Page2Props } from "../props";
+import { useTranslations } from 'next-intl';
 
 export default function Page2({ fileName , setFileName , fileSize, setFileSize, uploadDate, setUploadDate, moreInfo, setMoreInfo }: Page2Props) {
+    const t = useTranslations('Page2');
 
     const formatFileSize = (sizeInBytes: number) => {
         const sizeInKb = sizeInBytes / 1024;
@@ -30,7 +32,7 @@ export default function Page2({ fileName , setFileName , fileSize, setFileSize, 
 
     return (
         <div className="flex flex-col gap-5 w-full">
-            <h1 className="self-start text-[15px] font-bold">Profile Upload</h1>
+            <h1 className="self-start text-[15px] font-bold">{t('profile_upload')}</h1>
             <div className={`relative mb-6 items-center rounded-lg border-[1px] border-primary-gray p-4 h-[80px] ${fileName ? 'bg-primary-gray' : ''}`}>
                 <input
                     type='file'
@@ -77,7 +79,7 @@ export default function Page2({ fileName , setFileName , fileSize, setFileSize, 
                     </div>
                 )}
             </div>
-            <h1 className="self-start text-[15px] font-bold">More Information</h1>
+            <h1 className="self-start text-[15px] font-bold">{t('more_information')}</h1>
             <textarea 
                 className="h-[250px] shadow rounded-[10px] p-5" 
                 value={moreInfo} 

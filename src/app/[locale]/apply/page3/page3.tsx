@@ -4,6 +4,7 @@ import { useState } from 'react';
 import TextBox from "@/components/TextBox";
 import Image from 'next/image';
 import { Page3Props } from "../props";
+import { useTranslations } from "next-intl";
 
 export default function Page3({ 
     firstName, 
@@ -15,9 +16,11 @@ export default function Page3({
     uploadDate, 
     moreInfo, 
 }: Page3Props) {
+    const t = useTranslations('Page3');
+    
     return (
         <div className="flex flex-col gap-5 w-full">
-            <h1 className="self-start text-[15px] font-bold">Application Review</h1>
+            <h1 className="self-start text-[15px] font-bold">{t('application_review')}</h1>
             <div className="bg-[#A4D6FB] rounded-[10px] p-[20px] flex flex-col gap-5 h-[25rem]">
                 <div>
                     <h1 className='self-start text-left text-indigo-950 text-sm font-bold'>{firstName} {lastName}</h1>

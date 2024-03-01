@@ -17,34 +17,48 @@
         "home": "บ้าน",
         "language": "ภาษา"
     },
+    "Page1": {
+        "contact_information": "ข้อมูลติดต่อ",
+        "first_name": "ชื่อ",
+        "last_name": "นามสกุล",
+        "email": "อีเมล",
+        "phone_number": "หมายเลขโทรศัพท์"
+      },
+      "Page2": {
+        "profile_upload": "อัปโหลดโปรไฟล์",
+        "more_information": "ข้อมูลเพิ่มเติม"
+      },
+      "Page3": {
+        "application_review": "การตรวจสอบการสมัคร"
+      },
     "Jobs": [
         {
             "logo": "/sample-company-logo.png",
             "companyName": "SAVASDEE COMPANY",
             "location": "BKK",
-            "jobName": "アートディレクター",
-            "details": "短い2Dの説明用に、いくつかのキャラクターと環境のイラスト/デザインを作成する経験豊富なイラストレーターを募集しています。",
+            "jobName": "Art Director",
+            "details": "Looking to hire an experienced illustrator to create some character and environment illustrations/designs for a short 2D explainer, of the quality akin to the samples below",
             "requirements": [
-                "経験: [関連業界/ニッチ]でのプロジェクト管理における[X年]の実証された経験。",
-                "スキル: 優れた組織、コミュニケーション、リーダーシップスキル。プロジェクト管理ツールと方法論に精通していること。",
-                "革新: プロジェクトワークフローの革新と効率化を推進する実績。",
-                "適応性: ダイナミックなスタートアップ環境で活躍し、優先事項と課題の変化に迅速に適応する能力。"
+                "Experience: [X years] of proven experience in project management, preferably in [related industry/niche].",
+                "Skills: Strong organizational, communication, and leadership skills. Proficient in project management tools and methodologies.",
+                "Innovation: A track record of driving innovation and efficiency in project workflows.",
+                "Adaptability: Ability to thrive in a dynamic startup environment, adapting quickly to changing priorities and challenges."
             ],
             "facilities": [
                 {
-                    "topic": "キャリア成長",
-                    "detail": "[スタートアップ企業名]に参加することは、あなたの専門的な発展に投資するチームの一員であることを意味します。私たちは内部昇進を信じ、キャリアアップの機会を提供します。"
+                    "topic": "Career Growth",
+                    "detail": "Joining [Startup Company Name] means being part of a team invested in your professional development. We believe in promoting from within and providing opportunities for career advancement."
                 },
                 {
-                    "topic": "革新文化",
-                    "detail": "[業界/ニッチ]の最前線に立ち、実際の影響を与えるプロジェクトにあなたのアイデアと専門知識を貢献してください。"
+                    "topic": "Innovation Culture",
+                    "detail": "Be at the forefront of innovation in [industry/niche]. Contribute your ideas and expertise to projects that make a real impact."
                 },
                 {
-                    "topic": "協力的な環境",
-                    "detail": "協力、創造性、および卓越への共有コミットメントを価値とする多様で情熱的なチームと一緒に仕事をします。"
+                    "topic": "Collaborative Environment",
+                    "detail": "Work with a diverse and passionate team that values collaboration, creativity, and a shared commitment to excellence."
                 }
             ],
-            "description": "[業界/ニッチ]の風景を革命することを目指すダイナミックで革新的なスタートアップ、[スタートアップ企業名]へようこそ。私たちの情熱的なチームは、創造性、協力、および卓越を育む職場環境を作り出すことに専念しています。"
+            "description": "Welcome to [Startup Company Name], a dynamic and innovative startup poised to revolutionize the [industry/niche] landscape. Our passionate team is dedicated to creating a work environment that fosters creativity, collaboration, and excellence. "
         },
         {
             "logo": "/sample-company-logo.png",

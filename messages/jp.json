@@ -13,10 +13,24 @@
         "jobs": "仕事",
         "visa": "ビザ"
     },
+    "Page1": {
+        "contact_information": "連絡先情報",
+        "first_name": "名",
+        "last_name": "姓",
+        "email": "メール",
+        "phone_number": "電話番号"
+      },
     "SideBar": {
         "home": "ホーム",
         "language": "言語"
     },
+    "Page2": {
+        "profile_upload": "プロフィールのアップロード",
+        "more_information": "詳細情報"
+      },
+      "Page3": {
+        "application_review": "アプリケーションレビュー"
+      },
     "Jobs": [
         {
             "logo": "/sample-company-logo.png",

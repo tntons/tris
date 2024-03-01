@@ -23,17 +23,17 @@ export default function FilterDropdown({ onClick }: FilterDropdownProps){
     };
 
     return(
-        <div className="bg-white py-2 rounded-md absolute top-full right-0 mt-5 z-10 w-[15.6rem] shadow" onClick={onClick}>
+        <div className="bg-white py-2 rounded-md absolute top-full right-0 mt-5 z-10 w-[12rem] p-[10px] shadow" onClick={onClick}>
             <div className="flex flex-row">
-                <div className="w-[30%]">
+                {/* <div className="w-[30%]">
                     <div className="flex flex-row">
 
                     </div>
-                </div>
+                </div> */}
 
-                <div className="w-[2px] bg-black h-full"></div>
+                {/* <div className="w-[2px] bg-black h-full"></div> */}
 
-                <div className="w-[70%] text-[10px]">
+                <div className="w-full text-[10px]">
                     <h1 className="text-[12px]">Expertise</h1>
                     <p className="text-zinc-500">ALPHABETICAL</p>
                     <div className="flex flex-col">

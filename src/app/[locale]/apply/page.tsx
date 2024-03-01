@@ -44,17 +44,14 @@ export default function Apply() {
         }
     };
 
-    const company = "SAVASDEE"
-    const job = "Project Manager"
-
     return (
         <div>
             <div className="flex flex-col text-center justify-center py-[20px] px-[50px] gap-5 items-center">
                 <div className="justify-center items-center rounded-full bg-white w-[100px] h-[100px] border-3 border-black">
                     <Image src={selectedJob.logo} alt="company logo" width={100} height={100}></Image>
                 </div>
-                <h1 className="text-blue-950 font-bold text-base mt-[13px]">APPLY TO {company} COMPANY</h1>
-                <p className="text-blue-950 text-sm font-bold">{job}</p>
+                <h1 className="text-blue-950 font-bold text-base mt-[13px]">APPLY TO {selectedJob.companyName}</h1>
+                <p className="text-blue-950 text-sm font-bold">{selectedJob.jobName}</p>
 
                 <div className="border-t border-black border-dashed w-full mt-[15px]"></div>
 
