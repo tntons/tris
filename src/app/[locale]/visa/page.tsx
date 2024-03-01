@@ -1,6 +1,7 @@
 "use client"
 
 import { useRouter } from '@/navigation';
+import Image from 'next/image';
 
 export default function Visa() {
     const router = useRouter();
@@ -16,11 +17,13 @@ export default function Visa() {
                 <h1 className="text-nav-bar text-[70px] font-bold">Visa</h1>
             </div>
             <div className="flex flex-col items-center p-[30px] gap-[30px]">
-                <div className="p-[30px] bg-[#F7F6ED] rounded-[21px]" onClick={() => navigateToDetail('Bangkok')}>
-                    <h1 className="font-bold text-[70px] text-[#142864]">Bangkok</h1>
+                <div className="p-[30px] bg-[#F7F6ED] rounded-[21px] flex flex-row gap-5 w-full shadow" onClick={() => navigateToDetail('Bangkok')}>
+                    <Image src="/visa-location-logo.svg" alt="location logo" width={26} height={45} ></Image>
+                    <h1 className="font-bold text-[40px] text-[#142864]">Bangkok</h1>
                 </div>
-                <div className="p-[30px] bg-[#F7F6ED] rounded-[21px]" onClick={() => navigateToDetail('Fukuoka')}>
-                    <h1 className="font-bold text-[70px] text-[#142864]">Fukuoka</h1>
+                <div className="p-[30px] bg-[#F7F6ED] rounded-[21px] flex flex-row gap-5 w-full shadow" onClick={() => navigateToDetail('Fukuoka')}>
+                    <Image src="/visa-location-logo.svg" alt="location logo" width={26} height={45} ></Image>
+                    <h1 className="font-bold text-[40px] text-[#142864]">Fukuoka</h1>
                 </div>
                 <div className="p-[30px] bg-[#F7F6ED] w-[90%]">
                     <h1 className="font-bold text-[24px] text-[#142864]">FAQ</h1>

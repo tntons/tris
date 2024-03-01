@@ -5,12 +5,17 @@
         "story_from_bangkok": "Story from Bangkok",
         "story_from_bangkok_description": "Bangkok, a vibrant city, combines modernity with cultural heritage, offering diverse opportunities in sectors like tourism and business. It's enhancing its economy, focusing on startups and SMEs to drive growth and provide jobs for graduates, aiming for a more livable and attractive environment for both tourists and investors.",
         "story_from_fukuoka": "Story from Fukuoka",
-        "story_from_fukuoka_description": "Fukuoka, Japan, welcomed 200,000 visitors in 2022, offering easy transport and renowned cuisine. It's rapidly growing as a startup hub, supported by initiatives like the Startup City Fukuoka Declaration and Fukuoka Growth Next, making it a top choice for new businesses."
+        "story_from_fukuoka_description": "Fukuoka, Japan, welcomed 200,000 visitors in 2022, offering easy transport and renowned cuisine. It's rapidly growing as a startup hub, supported by initiatives like the Startup City Fukuoka Declaration and Fukuoka Growth Next, making it a top choice for new businesses.",
+        "click_here_to_search": "Click Here to Search"
     },
     "NavBar": {
         "home": "Home",
         "jobs": "Jobs",
         "visa": "VISA"
+    },
+    "SideBar": {
+        "home": "Home",
+        "language": "Language"
     },
     "Jobs": [
         {

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { DM_Sans } from "next/font/google"
 import SearchBar from "@/components/SearchBar";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/navigation";
 import { useTranslations } from "next-intl"; // Import useTranslations
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
@@ -22,7 +22,12 @@ export default function Home() {
         <Image src="/landing_page_bg.png" alt="Landing page background" layout="fill" objectFit="cover" />
       </div>
       <div className="flex flex-col justify-center items-center p-[15px]">
-        <SearchBar onClick={handleSearchClick} />
+        <div className="w-[90%] h-[37px] bg-primary-gray p-[9px] rounded-[4px] flex flex-row justify-start items-center" onClick={handleSearchClick}>
+            <div className='flex flex-row gap-3'>
+                <Image src="/search_icon.svg" alt="search_icon" width={22} height={19}/>
+                <p className="text-gray-500">{t('click_here_to_search')}</p>
+            </div>
+        </div>
         <div className="mt-[50px] text-left self-start px-[40px]">
           <h1 className="font-bold">{t('who_are_we')}</h1>
           <p className="text-[13.5px]">

@@ -15,7 +15,7 @@ type SearchBarProps = {
     setShouldFocus?: (shouldFocus: boolean) => void;
   };
 
-export default function SearchBar({ onClick, onChange, value , shouldFocus , setShouldFocus }: SearchBarProps){
+export default function SearchBar({ onClick, onChange, value , shouldFocus, setShouldFocus }: SearchBarProps){
     const pathname = usePathname();
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
@@ -47,18 +47,8 @@ export default function SearchBar({ onClick, onChange, value , shouldFocus , set
     const handleSearchClick = () => {
         if (pathname !== '/jobs') {
             router.push('/jobs?focus=true');
-            if (setShouldFocus) {
-                setShouldFocus(true);
-            }
         }
     };
-
-    useEffect(() => {
-        if (setShouldFocus && shouldFocus && inputRef.current) {
-            inputRef.current.focus();
-            setShouldFocus(false);
-        }
-    }, [shouldFocus]);
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
