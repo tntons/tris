@@ -39,17 +39,17 @@ export default function Page3({
                             {fileName}
                         </p>
                         <div className='flex flex-row gap-2 text-[#A9A5B8]'>
-                            <p className='text-sm'>
+                            <p className='text-[12px]'>
                                 {`${fileSize}`}
                             </p>
-                            <p className='text-sm'>
+                            <p className='text-[12px]'>
                                 {`${uploadDate}`}
                             </p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p className='text-left text-indigo-950 text-sm'>{moreInfo}</p>
+                <div className='relative'>
+                    <p className='text-left text-indigo-950 text-sm' style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>{moreInfo}</p>
                 </div>
             </div>
             
