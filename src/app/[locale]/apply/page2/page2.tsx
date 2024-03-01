@@ -68,10 +68,10 @@ export default function Page2({ fileName , setFileName , fileSize, setFileSize, 
                                 {fileName}
                             </p>
                             <div className='flex flex-row gap-2 text-[#A9A5B8]'>
-                                <p className='text-sm'>
+                                <p className='text-[12px]'>
                                     {`${fileSize}`}
                                 </p>
-                                <p className='text-sm'>
+                                <p className='text-[12px]'>
                                     {`${uploadDate}`}
                                 </p>
                             </div>
