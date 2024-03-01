@@ -11,9 +11,11 @@ type SearchBarProps = {
     onClick?: () => void;
     onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     value?: string;
+    shouldFocus?: boolean;
+    setShouldFocus?: (shouldFocus: boolean) => void;
   };
 
-export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
+export default function SearchBar({ onClick, onChange, value , shouldFocus , setShouldFocus }: SearchBarProps){
     const pathname = usePathname();
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
@@ -43,16 +45,18 @@ export default function SearchBar({ onClick, onChange, value }: SearchBarProps){
     };
 
     const handleSearchClick = () => {
-        if (pathname !== '/jobs') {
+        if (setShouldFocus && pathname !== '/jobs') {
             router.push('/jobs?focus=true');
+            setShouldFocus(true);
         }
     };
 
     useEffect(() => {
-        if (inputRef.current) {
+        if (setShouldFocus && shouldFocus && inputRef.current) {
             inputRef.current.focus();
+            setShouldFocus(false);
         }
-    }, [pathname]);
+    }, [shouldFocus]);
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {

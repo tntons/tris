@@ -24,6 +24,7 @@ export default function Jobs(){
     const { selectedJob, setSelectedJob } = useContext(SelectedJobContext);
     const t = useTranslations('Jobs');
     const inputRef = useContext(InputRefContext);
+    const [shouldFocus, setShouldFocus] = useState(false);
 
     let jobIndex;
     let jobCards = [];
@@ -51,10 +52,6 @@ export default function Jobs(){
     }
 
     useEffect(() => {
-        console.log(t);
-    }, [])
-
-    useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
         const shouldFocus = urlParams.get('focus');
         if (shouldFocus && inputRef && inputRef.current) {
@@ -64,7 +61,7 @@ export default function Jobs(){
 
     return(
         <div className='flex flex-col items-center justify-center p-[10px] gap-5'>
-            <SearchBar></SearchBar>
+            <SearchBar shouldFocus={shouldFocus} setShouldFocus={setShouldFocus}></SearchBar>
             <div className='w-[90%] flex justify-start'>
                 <div className='flex flex-row flex-wrap items-start gap-2'>
                     {Object.entries(checkedItems).map(([expertise, isChecked]) => 
