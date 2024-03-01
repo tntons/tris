@@ -91,7 +91,10 @@ export default function VisaDetail() {
                     {details.map((detail, index) => {
                         return (
                             <div key={index} className="flex flex-col mt-[30px] gap-[20px]">
-                                <h1 className="text-[17px] font-light">{detail.title}</h1>
+                                <div className='flex flex-row'>
+                                    <div className='h-[24px] w-[2.5px] bg-[#55DF63] mr-[10px]'> </div>
+                                    <h1 className="text-[17px] font-light">{detail.title}</h1>
+                                </div>
                                 <p className="text-[15px] font-light" style={{ whiteSpace: 'pre-line' }}>{detail.detail}</p>
                             </div>
                         )})
